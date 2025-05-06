@@ -16,12 +16,7 @@ namespace AlgorithmsTest.Easy
         public void Execute(int[] digits, int[] expected)
         {
             var actual = Algorithms.Easy.PlusOne.Plus(digits);
-            Assert.Equal(expected.Length, actual.Length);
-
-            for (var i = 0; i < expected.Length; i++)
-            {
-                Assert.Equal(expected[i], actual[i]);
-            }
+            Assert.Equal(expected, actual);
         }
     }
 }
